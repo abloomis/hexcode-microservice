@@ -1,8 +1,8 @@
 # Hexcode Microservice
 
 I have created this microservice to convert between color names and hex codes. It supports:
-- **Color name → Hex code** (e.g. "red" → "#FF0000")
-- **Hex code + Bins → Color name** (e.g. "#00FF00" with 3 color bins → "green")
+- **Color name → Hex code** ('red' returns '#FF0000')
+- **Hex code + Bins → Color name** ('#15DF4B' with 3 color bins returns 'green')
 
 ## Communication Contract
 
@@ -29,6 +29,7 @@ This requires running hexToStr_server.py and the StrToHex_server.py files **simu
 ```
 
 > Bin count is required for hex-to-string conversion and determines which color bin mapping to use.
+> Color bin information can be seen in /hex_to_str/colorBins.py
 
 ---
 
@@ -85,3 +86,4 @@ print(send_request({"hex": "#FF0000", "bins": 3}, 65433))  # {"color_name": "red
 ![UML Diagram](./assets/uml-diagram.png)
 
 ---
+This image was created with PlantUML.com
