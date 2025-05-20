@@ -80,6 +80,6 @@ print(send_request({"hex": "#FF0000", "bins": 3}, 65433))  # {"color_name": "red
 ---
 
 ## UML Sequence Diagram (PlantUML)
-![UML Diagram](uml-diagram.png)
+![UML Diagram](./assets/uml-diagram.png)
 
 ---
