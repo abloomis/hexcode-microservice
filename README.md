@@ -7,6 +7,7 @@ I have created this microservice to convert between color names and hex codes. I
 ## Communication Contract
 
 Your client must use **TCP sockets** to send a JSON-encoded request and receive a JSON-encoded response.
+This requires running hexToStr_server.py and the StrToHex_server.py files **simultaneously in separate terminals**.
 
 ### 1. Request Format
 
@@ -64,6 +65,7 @@ Your client must use **TCP sockets** to send a JSON-encoded request and receive 
 ```python
 import socket, json
 
+# establish the socket
 def send_request(payload, port):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.connect(('localhost', port))
